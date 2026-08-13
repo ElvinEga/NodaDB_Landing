@@ -1,0 +1,8 @@
+{
+  "name": "NodaDB",
+  "description": "Modern Database Management Platform built in Rust. Fast, local-first, native workspace for SQL and NoSQL databases.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
