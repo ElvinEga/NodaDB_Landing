@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { JosInit } from '@/components/JosInit';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -103,6 +104,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="bg-[#0B0B09] text-zinc-100 font-sans antialiased selection:bg-[#17CF97]/30 selection:text-[#17CF97] min-h-screen overflow-x-hidden" suppressHydrationWarning>
+        <JosInit />
         {children}
       </body>
     </html>
