@@ -43,13 +43,12 @@ export function Navbar({ onOpenDownloadModal, onOpenSignInModal }: NavbarProps) 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600 dark:text-zinc-300">
           <Link href="#features" className="hover:text-slate-900 dark:hover:text-white transition-colors flex items-center gap-1">
-            Features <ChevronDown className="w-3.5 h-3.5 text-slate-400 dark:text-zinc-400" />
+            Features
           </Link>
           <Link href="#pricing" className="hover:text-slate-900 dark:hover:text-white transition-colors">Pricing</Link>
           <Link href="#showcase" className="hover:text-slate-900 dark:hover:text-white transition-colors">Docs</Link>
           <Link href="#integrations" className="hover:text-slate-900 dark:hover:text-white transition-colors flex items-center gap-1.5">
             Databases
-            <span className="px-1.5 py-0.2 rounded bg-[#17CF97]/20 text-[#047857] dark:text-[#17CF97] text-[11px] font-mono font-medium">18+</span>
           </Link>
           <Link href="#faq" className="hover:text-slate-900 dark:hover:text-white transition-colors">Security</Link>
         </nav>
