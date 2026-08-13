@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="bg-[#080A08] border-t border-white/10 text-zinc-400 font-sans text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-          
+
           {/* Left Side: Brand, Tagline, Socials, Copyright */}
           <div className="lg:col-span-5 flex flex-col justify-between space-y-8">
             <div className="space-y-5">
@@ -56,13 +56,13 @@ export function Footer() {
 
             {/* Bottom Copyright */}
             <div className="pt-8 text-xs sm:text-sm text-zinc-500 font-sans">
-              © 2026 NodaDB, Inc. Universal Database Management Workspace.
+              © 2026 Kulacore.
             </div>
           </div>
 
           {/* Right Side: 3 Navigation Columns */}
           <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8 sm:gap-12">
-            
+
             {/* Column 1: Product */}
             <div className="space-y-4">
               <h3 className="text-sm font-medium text-white tracking-tight">Product</h3>
