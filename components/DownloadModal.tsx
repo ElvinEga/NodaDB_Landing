@@ -23,10 +23,9 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleTriggerDownload = (assetType: string) => {
+  const handleTriggerDownload = (assetUrl: string) => {
     setDownloaded(true);
-    // Link directly to official GitHub Releases page
-    window.open('https://github.com/ElvinEga/NodaDB/releases', '_blank');
+    window.open(assetUrl, '_blank');
     setTimeout(() => {
       setDownloaded(false);
     }, 4000);
@@ -69,56 +68,42 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
             <div className="text-[10px] uppercase font-mono tracking-wider text-zinc-500">Desktop Installers</div>
 
             <button
-              onClick={() => handleTriggerDownload('macOS Apple Silicon')}
+              onClick={() => handleTriggerDownload('https://github.com/ElvinEga/NodaDB/releases/download/v0.3.10/NodaDB_0.3.10_amd64.AppImage')}
               className="w-full p-3 rounded-xl bg-[#1A1A18] border border-white/10 hover:border-[#17CF97]/50 flex items-center justify-between text-xs font-mono text-zinc-200 transition-colors group cursor-pointer"
             >
               <div className="flex items-center gap-3">
                 <AppleIcon className="w-5 h-5 text-zinc-300 group-hover:text-[#17CF97] transition-colors" />
                 <div className="text-left font-sans">
-                  <div className="font-semibold text-white">macOS (Apple Silicon M1/M2/M3/M4)</div>
-                  <div className="text-[10px] text-zinc-400">NodaDB-1.0.0-arm64.dmg · GitHub Release</div>
+                  <div className="font-semibold text-white">macOS (App Bundle / Source)</div>
+                  <div className="text-[10px] text-zinc-400">NodaDB v0.3.10 · GitHub Release</div>
                 </div>
               </div>
               <Download className="w-4 h-4 text-zinc-400 group-hover:text-[#17CF97]" />
             </button>
 
             <button
-              onClick={() => handleTriggerDownload('macOS Intel')}
-              className="w-full p-3 rounded-xl bg-[#1A1A18] border border-white/10 hover:border-[#17CF97]/50 flex items-center justify-between text-xs font-mono text-zinc-200 transition-colors group cursor-pointer"
-            >
-              <div className="flex items-center gap-3">
-                <AppleIcon className="w-5 h-5 text-zinc-400 group-hover:text-[#17CF97] transition-colors" />
-                <div className="text-left font-sans">
-                  <div className="font-semibold text-white">macOS (Intel x64)</div>
-                  <div className="text-[10px] text-zinc-400">NodaDB-1.0.0-x64.dmg · GitHub Release</div>
-                </div>
-              </div>
-              <Download className="w-4 h-4 text-zinc-400 group-hover:text-[#17CF97]" />
-            </button>
-
-            <button
-              onClick={() => handleTriggerDownload('Windows x64')}
+              onClick={() => handleTriggerDownload('https://github.com/ElvinEga/NodaDB/releases/download/v0.3.10/NodaDB_0.3.10_x64-setup.exe')}
               className="w-full p-3 rounded-xl bg-[#1A1A18] border border-white/10 hover:border-[#17CF97]/50 flex items-center justify-between text-xs font-mono text-zinc-200 transition-colors group cursor-pointer"
             >
               <div className="flex items-center gap-3">
                 <WindowsIcon className="w-5 h-5 text-zinc-400 group-hover:text-[#17CF97] transition-colors" />
                 <div className="text-left font-sans">
-                  <div className="font-semibold text-white">Windows 10/11 (x64 Setup)</div>
-                  <div className="text-[10px] text-zinc-400">NodaDB-Setup-1.0.0.exe · GitHub Release</div>
+                  <div className="font-semibold text-white">Windows (x64 Setup / .msi)</div>
+                  <div className="text-[10px] text-zinc-400">NodaDB_0.3.10_x64-setup.exe (9.29 MB)</div>
                 </div>
               </div>
               <Download className="w-4 h-4 text-zinc-400 group-hover:text-[#17CF97]" />
             </button>
 
             <button
-              onClick={() => handleTriggerDownload('Linux AppImage')}
+              onClick={() => handleTriggerDownload('https://github.com/ElvinEga/NodaDB/releases/download/v0.3.10/NodaDB_0.3.10_amd64.deb')}
               className="w-full p-3 rounded-xl bg-[#1A1A18] border border-white/10 hover:border-[#17CF97]/50 flex items-center justify-between text-xs font-mono text-zinc-200 transition-colors group cursor-pointer"
             >
               <div className="flex items-center gap-3">
                 <LinuxIcon className="w-5 h-5 text-zinc-400 group-hover:text-[#17CF97] transition-colors" />
                 <div className="text-left font-sans">
-                  <div className="font-semibold text-white">Linux (AppImage / .deb)</div>
-                  <div className="text-[10px] text-zinc-400">NodaDB-1.0.0.AppImage · GitHub Release</div>
+                  <div className="font-semibold text-white">Linux (AppImage / .deb / .rpm)</div>
+                  <div className="text-[10px] text-zinc-400">NodaDB_0.3.10_amd64.AppImage (90 MB)</div>
                 </div>
               </div>
               <Download className="w-4 h-4 text-zinc-400 group-hover:text-[#17CF97]" />
