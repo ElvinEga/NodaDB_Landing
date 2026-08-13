@@ -75,29 +75,29 @@ export function Footer() {
               <h3 className="text-sm font-medium text-white tracking-tight">Product</h3>
               <ul className="space-y-3 text-sm text-zinc-400">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">Home</a>
+                  <Link href="/" className="hover:text-white transition-colors">Home</Link>
                 </li>
                 <li>
-                  <a href="#pricing" className="hover:text-white transition-colors inline-flex items-center gap-2">
+                  <Link href="#pricing" className="hover:text-white transition-colors inline-flex items-center gap-2">
                     <span>Pricing</span>
                     <span className="px-1.5 py-0.5 text-[10px] rounded bg-[#0E2E20] border border-[#17CF97]/30 text-[#17CF97] font-mono font-medium">
                       10% OFF
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">About</a>
+                  <Link href="#" className="hover:text-white transition-colors">About</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors inline-flex items-center gap-2">
+                  <Link href="#" className="hover:text-white transition-colors inline-flex items-center gap-2">
                     <span>Careers</span>
                     <span className="px-1.5 py-0.5 text-[10px] rounded bg-[#0E2E20] border border-[#17CF97]/30 text-[#17CF97] font-mono font-medium">
                       6
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">Contact</a>
+                  <Link href="#" className="hover:text-white transition-colors">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -107,24 +107,24 @@ export function Footer() {
               <h3 className="text-sm font-medium text-white tracking-tight">Resources</h3>
               <ul className="space-y-3 text-sm text-zinc-400">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">Blog</a>
+                  <Link href="#" className="hover:text-white transition-colors">Blog</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors inline-flex items-center gap-2">
+                  <Link href="#" className="hover:text-white transition-colors inline-flex items-center gap-2">
                     <span>Slides</span>
                     <span className="px-1.5 py-0.5 text-[10px] rounded bg-[#0E2E20] border border-[#17CF97]/30 text-[#17CF97] font-mono font-medium">
                       NEW
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/download" className="hover:text-white transition-colors">Downloads</a>
+                  <Link href="/download" className="hover:text-white transition-colors">Downloads</Link>
                 </li>
                 <li>
-                  <a href="#integrations" className="hover:text-white transition-colors">Integrations</a>
+                  <Link href="#integrations" className="hover:text-white transition-colors">Integrations</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">Changelog</a>
+                  <Link href="#" className="hover:text-white transition-colors">Changelog</Link>
                 </li>
               </ul>
             </div>
@@ -134,26 +134,26 @@ export function Footer() {
               <h3 className="text-sm font-medium text-white tracking-tight">Legal</h3>
               <ul className="space-y-3 text-sm text-zinc-400">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                  <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+                  <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">404 Page</a>
+                  <Link href="#" className="hover:text-white transition-colors">404 Page</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">Waitlist</a>
+                  <Link href="#" className="hover:text-white transition-colors">Waitlist</Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors inline-flex items-center gap-2">
+                  <Link href="#" className="hover:text-white transition-colors inline-flex items-center gap-2">
                     <span className="flex items-center gap-1">
                       Status <ExternalLink className="w-3 h-3 text-zinc-400" />
                     </span>
                     <span className="px-2 py-0.5 text-[10px] rounded-md bg-[#0E2E20] border border-[#17CF97]/30 text-[#17CF97] font-mono font-medium">
                       Operational
                     </span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
