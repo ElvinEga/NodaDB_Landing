@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'motion/react';
 import { Download, Terminal, X, Check, Copy, ShieldCheck } from 'lucide-react';
 import { AppleIcon, WindowsIcon, LinuxIcon } from './icons/OsIcons';
@@ -141,13 +142,13 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
             </div>
 
             <div className="text-center pt-2">
-              <a
+              <Link
                 href="/download"
                 onClick={onClose}
                 className="text-xs text-[#17CF97] hover:underline font-mono inline-flex items-center gap-1"
               >
                 <span>View full technical download &amp; build options →</span>
-              </a>
+              </Link>
             </div>
           </div>
         )}
