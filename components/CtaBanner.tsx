@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { Check, ArrowRight } from 'lucide-react';
 import { AppleIcon, WindowsIcon, LinuxIcon } from './icons/OsIcons';
 
@@ -55,8 +56,8 @@ export function CtaBanner({ onOpenDownloadModal }: CtaBannerProps) {
                   <div className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
                   <div className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
                   <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
-                  <span className="ml-1.5 font-semibold text-white flex items-center gap-1">
-                    <span className="w-2 h-2 rounded bg-[#17CF97] inline-block" />
+                  <span className="ml-1.5 font-semibold text-white flex items-center gap-1.5">
+                    <Image src="/logo.png" alt="NodaDB" width={16} height={16} className="w-4 h-4 object-contain rounded" />
                     NodaDB
                   </span>
                 </div>
