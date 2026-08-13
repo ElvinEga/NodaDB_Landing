@@ -125,10 +125,12 @@ export function TestimonialsSection() {
 
         {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reviews.map((rev) => (
+          {reviews.map((rev, index) => (
             <div
               key={rev.id}
-              className="p-6 sm:p-7 rounded-2xl bg-[#121413] border border-white/[0.08] hover:border-[#17CF97]/30 transition-all duration-300 flex flex-col justify-between space-y-6 shadow-lg group"
+              className="jos p-6 sm:p-7 rounded-2xl bg-[#121413] border border-white/[0.08] hover:border-[#17CF97]/30 transition-all duration-300 flex flex-col justify-between space-y-6 shadow-lg group"
+              data-jos_animation="flip-up"
+              data-jos_delay={(index % 3) * 0.1}
             >
               {/* Stars & Review text */}
               <div className="space-y-4">
