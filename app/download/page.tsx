@@ -45,7 +45,7 @@ export default function DownloadPage() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1A1A18] border border-white/10 text-xs font-mono text-zinc-300">
             <span className="w-2 h-2 rounded-full bg-[#17CF97] animate-pulse" />
             <span>Latest Release: v1.0.0</span>
-            <a
+            <Link
               href="https://github.com/ElvinEga/NodaDB/releases"
               target="_blank"
               rel="noopener noreferrer"
@@ -53,7 +53,7 @@ export default function DownloadPage() {
             >
               <span>GitHub Releases</span>
               <ExternalLink className="w-3 h-3" />
-            </a>
+            </Link>
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif text-white font-normal tracking-tight max-w-4xl mx-auto leading-tight">
@@ -66,7 +66,7 @@ export default function DownloadPage() {
 
           {/* Direct GitHub Release CTA */}
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
-            <a
+            <Link
               href="https://github.com/ElvinEga/NodaDB/releases"
               target="_blank"
               rel="noopener noreferrer"
@@ -75,7 +75,7 @@ export default function DownloadPage() {
               <Download className="w-4 h-4 stroke-[2.5]" />
               <span>Browse All Releases on GitHub</span>
               <ExternalLink className="w-4 h-4 opacity-80" />
-            </a>
+            </Link>
 
             <button
               onClick={() => setDownloadModalOpen(true)}
@@ -122,7 +122,7 @@ export default function DownloadPage() {
                   </div>
                 </div>
               </div>
-              <a
+              <Link
                 href="https://github.com/ElvinEga/NodaDB/releases"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -130,7 +130,7 @@ export default function DownloadPage() {
               >
                 <Download className="w-4 h-4" />
                 <span>Download macOS .dmg</span>
-              </a>
+              </Link>
             </div>
 
             {/* Windows */}
@@ -156,7 +156,7 @@ export default function DownloadPage() {
                   </div>
                 </div>
               </div>
-              <a
+              <Link
                 href="https://github.com/ElvinEga/NodaDB/releases"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -164,7 +164,7 @@ export default function DownloadPage() {
               >
                 <Download className="w-4 h-4" />
                 <span>Download Windows .exe</span>
-              </a>
+              </Link>
             </div>
 
             {/* Linux */}
@@ -190,7 +190,7 @@ export default function DownloadPage() {
                   </div>
                 </div>
               </div>
-              <a
+              <Link
                 href="https://github.com/ElvinEga/NodaDB/releases"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -198,7 +198,7 @@ export default function DownloadPage() {
               >
                 <Download className="w-4 h-4" />
                 <span>Download Linux Assets</span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
