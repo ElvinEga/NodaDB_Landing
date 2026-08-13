@@ -66,7 +66,7 @@ export function CommandsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
         
         {/* Top Header - Left Aligned matching design screenshot */}
-        <div className="space-y-4 max-w-2xl">
+        <div className="jos space-y-4 max-w-2xl" data-jos_animation="fade-up">
           <div className="inline-flex items-center gap-2 text-xs font-mono text-[#17CF97] uppercase tracking-wider font-semibold">
             <Terminal className="w-4 h-4 text-[#17CF97]" />
             <span>COMMANDS</span>
@@ -83,14 +83,16 @@ export function CommandsSection() {
 
         {/* 4-Column Grid of Commands */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 sm:gap-x-10 gap-y-10 sm:gap-y-12">
-          {commandsList.map((item) => {
+          {commandsList.map((item, index) => {
             const isCopied = copiedCmd === item.command;
 
             return (
               <div
                 key={item.command}
                 onClick={() => handleCopy(item.command)}
-                className="group relative p-4 -m-4 rounded-xl hover:bg-white/[0.03] transition-all cursor-pointer flex flex-col justify-between space-y-3"
+                className="jos group relative p-4 -m-4 rounded-xl hover:bg-white/[0.03] transition-all cursor-pointer flex flex-col justify-between space-y-3"
+                data-jos_animation="fade-up"
+                data-jos_delay={(index % 4) * 0.1}
               >
                 <div>
                   {/* Command Tag */}
