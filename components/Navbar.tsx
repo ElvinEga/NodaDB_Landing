@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'motion/react';
 import { Terminal, Download, Menu, X, ChevronDown, Check, Sparkles, ExternalLink } from 'lucide-react';
 import { AppleIcon, WindowsIcon, LinuxIcon } from './icons/OsIcons';
-// import { ThemeSwitcher } from './ThemeProvider';
 
 interface NavbarProps {
   onOpenDownloadModal: () => void;
@@ -25,18 +26,19 @@ export function Navbar({ onOpenDownloadModal, onOpenSignInModal }: NavbarProps) 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-black/10 dark:border-white/[0.06] bg-white/80 dark:bg-[#0B0B09]/80 backdrop-blur-xl transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Brand Logo - 4 Emerald Dots Clover + NodaDB */}
-        <a href="#" className="flex items-center gap-2.5 group">
-          <div className="grid grid-cols-2 gap-0.5 w-5 h-5 items-center justify-center">
-            <div className="w-2 h-2 rounded-full bg-[#17CF97] transition-transform group-hover:scale-110" />
-            <div className="w-2 h-2 rounded-full bg-[#17CF97]/80 transition-transform group-hover:scale-110" />
-            <div className="w-2 h-2 rounded-full bg-[#17CF97]/80 transition-transform group-hover:scale-110" />
-            <div className="w-2 h-2 rounded-full bg-[#17CF97] transition-transform group-hover:scale-110" />
-          </div>
+        {/* Brand Logo - Official NodaDB Logo */}
+        <Link href="/" className="flex items-center gap-2.5 group">
+          <Image
+            src="/logo.png"
+            alt="NodaDB Logo"
+            width={28}
+            height={28}
+            className="w-7 h-7 object-contain rounded-lg transition-transform group-hover:scale-105"
+          />
           <span className="font-semibold text-lg tracking-tight text-slate-900 dark:text-white">
             NodaDB
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600 dark:text-zinc-300">
