@@ -66,7 +66,7 @@ export function PricingSection({ onSelectPlan }: PricingProps) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch max-w-6xl mx-auto">
           
           {/* Card 1: Hobby */}
-          <div className="rounded-2xl sm:rounded-3xl bg-[#121413] border border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between space-y-8 hover:border-white/20 transition-all shadow-xl">
+          <div className="jos rounded-2xl sm:rounded-3xl bg-[#121413] border border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between space-y-8 hover:border-white/20 transition-all shadow-xl" data-jos_animation="zoom-in-up" data-jos_delay="0">
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-medium text-white">Hobby</h3>
@@ -132,7 +132,7 @@ export function PricingSection({ onSelectPlan }: PricingProps) {
           </div>
 
           {/* Card 2: Pro */}
-          <div className="rounded-2xl sm:rounded-3xl bg-[#121413] border border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between space-y-8 relative hover:border-[#17CF97]/30 transition-all shadow-xl">
+          <div className="jos rounded-2xl sm:rounded-3xl bg-[#121413] border border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between space-y-8 relative hover:border-[#17CF97]/30 transition-all shadow-xl" data-jos_animation="zoom-in-up" data-jos_delay="0.1">
             {/* POPULAR Badge */}
             <div className="absolute top-6 right-6 px-2.5 py-0.5 rounded-full bg-[#0C583E] text-[#17CF97] text-[10px] font-mono font-bold tracking-wider uppercase">
               POPULAR
@@ -212,7 +212,7 @@ export function PricingSection({ onSelectPlan }: PricingProps) {
           </div>
 
           {/* Card 3: Expert */}
-          <div className="rounded-2xl sm:rounded-3xl bg-[#121413] border border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between space-y-8 hover:border-white/20 transition-all shadow-xl">
+          <div className="jos rounded-2xl sm:rounded-3xl bg-[#121413] border border-white/[0.08] p-6 sm:p-8 flex flex-col justify-between space-y-8 hover:border-white/20 transition-all shadow-xl" data-jos_animation="zoom-in-up" data-jos_delay="0.2">
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-medium text-white">Expert</h3>
