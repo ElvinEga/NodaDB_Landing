@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
 import { Download, Terminal, X, Check, Copy, ShieldCheck } from 'lucide-react';
 import { AppleIcon, WindowsIcon, LinuxIcon } from './icons/OsIcons';
@@ -48,12 +49,12 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
         </button>
 
         <div className="space-y-2 text-center">
-          <div className="w-12 h-12 rounded-2xl bg-[#17CF97]/20 border border-[#17CF97]/40 flex items-center justify-center text-[#17CF97] mx-auto">
-            <Download className="w-6 h-6" />
+          <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mx-auto">
+            <Image src="/logo.png" alt="NodaDB" width={32} height={32} className="w-8 h-8 object-contain rounded-lg" />
           </div>
           <h3 className="text-2xl font-serif text-white">Get NodaDB Desktop &amp; CLI</h3>
           <p className="text-xs text-zinc-400 font-sans max-w-xs mx-auto">
-            Official binaries from GitHub Releases or package managers.
+            Official binaries from GitHub Releases or package managers. Powered by Kulacore.
           </p>
         </div>
 
