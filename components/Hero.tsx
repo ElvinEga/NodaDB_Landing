@@ -177,7 +177,7 @@ export function Hero({ onOpenDownloadModal }: HeroProps) {
           <Image
             src="/images/noda-preview.png"
             alt="IDE Preview"
-            className="w-full h-full object-cover "
+            className="w-full h-full object-cover block"
             width={1200}
             height={800} />
            </div>
