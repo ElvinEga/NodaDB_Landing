@@ -110,7 +110,8 @@ export function Hero({ onOpenDownloadModal }: HeroProps) {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1A1A18]/90 border border-white/10 hover:border-white/20 text-xs font-sans text-zinc-300 hover:text-white transition-all shadow-lg backdrop-blur-md group"
+            className="jos inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1A1A18]/90 border border-white/10 hover:border-white/20 text-xs font-sans text-zinc-300 hover:text-white transition-all shadow-lg backdrop-blur-md group"
+            data-jos_animation="fade-down"
           >
             <span className="px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 text-[10px] font-mono font-bold tracking-wider uppercase">
               NEW
@@ -124,7 +125,9 @@ export function Hero({ onOpenDownloadModal }: HeroProps) {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-serif text-5xl sm:text-7xl md:text-[84px] font-normal tracking-tight text-white leading-[1.04] max-w-4xl"
+            className="jos font-serif text-5xl sm:text-7xl md:text-[84px] font-normal tracking-tight text-white leading-[1.04] max-w-4xl"
+            data-jos_animation="fade-up"
+            data-jos_delay="0.1"
           >
             Mordern Universal database  <br />
             workspace.
@@ -135,7 +138,9 @@ export function Hero({ onOpenDownloadModal }: HeroProps) {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-sm sm:text-base md:text-lg text-zinc-400 max-w-xl font-normal leading-relaxed"
+            className="jos text-sm sm:text-base md:text-lg text-zinc-400 max-w-xl font-normal leading-relaxed"
+            data-jos_animation="fade-up"
+            data-jos_delay="0.2"
           >
             NodaDB is a modern database management platform for developers and data teams. Connect to, explore, query, and visualize SQL and NoSQL databases in one fast, native application.
           </motion.p>
@@ -145,7 +150,9 @@ export function Hero({ onOpenDownloadModal }: HeroProps) {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="pt-2"
+            className="jos pt-2"
+            data-jos_animation="fade-up"
+            data-jos_delay="0.3"
           >
             <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-[#141412] border border-white/10 text-xs font-mono text-zinc-300 shadow-2xl hover:border-white/20 transition-all group">
               <span className="text-zinc-500 font-bold">$</span>
@@ -171,7 +178,9 @@ export function Hero({ onOpenDownloadModal }: HeroProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-12 md:mt-16"
+          className="jos mt-12 md:mt-16"
+          data-jos_animation="zoom-in"
+          data-jos_delay="0.4"
         >
            <div className="w-full rounded-2xl overflow-hidden">
           <Image
