@@ -42,23 +42,23 @@ export function Navbar({ onOpenDownloadModal, onOpenSignInModal }: NavbarProps) 
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600 dark:text-zinc-300">
-          <a href="#features" className="hover:text-slate-900 dark:hover:text-white transition-colors flex items-center gap-1">
+          <Link href="#features" className="hover:text-slate-900 dark:hover:text-white transition-colors flex items-center gap-1">
             Features <ChevronDown className="w-3.5 h-3.5 text-slate-400 dark:text-zinc-400" />
-          </a>
-          <a href="#pricing" className="hover:text-slate-900 dark:hover:text-white transition-colors">Pricing</a>
-          <a href="#showcase" className="hover:text-slate-900 dark:hover:text-white transition-colors">Docs</a>
-          <a href="#integrations" className="hover:text-slate-900 dark:hover:text-white transition-colors flex items-center gap-1.5">
+          </Link>
+          <Link href="#pricing" className="hover:text-slate-900 dark:hover:text-white transition-colors">Pricing</Link>
+          <Link href="#showcase" className="hover:text-slate-900 dark:hover:text-white transition-colors">Docs</Link>
+          <Link href="#integrations" className="hover:text-slate-900 dark:hover:text-white transition-colors flex items-center gap-1.5">
             Databases
             <span className="px-1.5 py-0.2 rounded bg-[#17CF97]/20 text-[#047857] dark:text-[#17CF97] text-[11px] font-mono font-medium">18+</span>
-          </a>
-          <a href="#faq" className="hover:text-slate-900 dark:hover:text-white transition-colors">Security</a>
+          </Link>
+          <Link href="#faq" className="hover:text-slate-900 dark:hover:text-white transition-colors">Security</Link>
         </nav>
 
         {/* Action Buttons & Theme Switcher */}
         <div className="hidden md:flex items-center gap-4">
           {/*<ThemeSwitcher />*/}
 
-          <a
+          <Link
             href="https://github.com/ElvinEga/NodaDB"
             target="_blank"
             rel="noopener noreferrer"
@@ -66,7 +66,7 @@ export function Navbar({ onOpenDownloadModal, onOpenSignInModal }: NavbarProps) 
           >
             <GithubIcon className="w-4 h-4" />
             <span>GitHub</span>
-          </a>
+          </Link>
 
           <button
             onClick={onOpenDownloadModal}
@@ -102,14 +102,14 @@ export function Navbar({ onOpenDownloadModal, onOpenSignInModal }: NavbarProps) 
             exit={{ height: 0, opacity: 0 }}
             className="md:hidden border-b border-slate-200 dark:border-white/10 bg-white dark:bg-[#0B0B09] px-4 pt-2 pb-6 space-y-3"
           >
-            <a href="#features" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sm text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white">Features</a>
-            <a href="#workspace" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sm text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white">Workspace</a>
-            <a href="#commands" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sm text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white">Commands</a>
-            <a href="#pricing" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sm text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white">Pricing</a>
-            <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sm text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white">FAQ</a>
+            <Link href="#features" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sm text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white">Features</Link>
+            <Link href="#workspace" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sm text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white">Workspace</Link>
+            <Link href="#commands" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sm text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white">Commands</Link>
+            <Link href="#pricing" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sm text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white">Pricing</Link>
+            <Link href="#faq" onClick={() => setMobileMenuOpen(false)} className="block py-2 text-sm text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white">FAQ</Link>
 
             <div className="pt-4 border-t border-slate-200 dark:border-white/10 flex flex-col gap-2">
-              <a
+              <Link
                 href="https://github.com/ElvinEga/NodaDB"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -118,7 +118,7 @@ export function Navbar({ onOpenDownloadModal, onOpenSignInModal }: NavbarProps) 
               >
                 <GithubIcon className="w-4 h-4" />
                 <span>GitHub</span>
-              </a>
+              </Link>
               <button
                 onClick={() => { setMobileMenuOpen(false); onOpenDownloadModal(); }}
                 className="w-full text-center py-2.5 text-sm font-semibold text-white dark:text-[#0B0B09] bg-[#17CF97] rounded-lg shadow-lg shadow-[#17CF97]/20"
