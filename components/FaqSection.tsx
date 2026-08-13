@@ -14,7 +14,7 @@ export function FaqSection() {
   const faqs = [
     {
       q: 'What is NodaDB?',
-      a: 'NodaDB is a modern, local-first database management workspace built in Rust. It allows developers and data teams to connect to, explore, query, and visualize PostgreSQL, MySQL, MongoDB, Redis, SQLite, and more in a fast, native application.',
+      a: 'NodaDB (hosted on nodadb.com and powered by Kulacore) is a modern, local-first database management workspace built in Rust. It allows developers and data teams to connect to, explore, query, and visualize PostgreSQL, MySQL, MongoDB, Redis, SQLite, ClickHouse, and cloud databases in a fast, native application.',
     },
     {
       q: 'Does NodaDB support team collaboration?',
