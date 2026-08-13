@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
 
 export function Footer() {
@@ -12,19 +14,20 @@ export function Footer() {
           <div className="lg:col-span-5 flex flex-col justify-between space-y-8">
             <div className="space-y-5">
               {/* Logo & Brand Name */}
-              <a href="#" className="inline-flex items-center gap-3">
-                <svg className="w-7 h-7 text-[#17CF97]" viewBox="0 0 24 24" fill="currentColor">
-                  <rect x="2" y="2" width="9" height="9" rx="3" />
-                  <rect x="13" y="2" width="9" height="9" rx="3" />
-                  <rect x="2" y="13" width="9" height="9" rx="3" />
-                  <rect x="13" y="13" width="9" height="9" rx="3" />
-                </svg>
+              <Link href="/" className="inline-flex items-center gap-3 group">
+                <Image
+                  src="/logo.png"
+                  alt="NodaDB Logo"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 object-contain rounded-lg transition-transform group-hover:scale-105"
+                />
                 <span className="text-xl font-medium text-white tracking-tight">NodaDB</span>
-              </a>
+              </Link>
 
               {/* Tagline */}
               <p className="text-zinc-400 text-sm sm:text-base font-sans max-w-sm">
-                Universal local-first database management workspace built in Rust.
+                Universal local-first database management workspace built in Rust. Powered by <span className="text-white font-medium">Kulacore</span>.
               </p>
 
               {/* Social Icons Row */}
@@ -35,16 +38,6 @@ export function Footer() {
                     <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.891h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
                   </svg>
                 </a>
-
-                {/* Instagram */}
-                <a href="#" className="hover:text-white transition-colors" aria-label="Instagram">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                  </svg>
-                </a>
-
                 {/* X / Twitter */}
                 <a href="#" className="hover:text-white transition-colors" aria-label="X">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
