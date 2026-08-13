@@ -116,7 +116,7 @@ export function Hero({ onOpenDownloadModal }: HeroProps) {
             <span className="px-2 py-0.5 rounded-full bg-white/10 text-zinc-300 text-[10px] font-mono font-bold tracking-wider uppercase">
               NEW
             </span>
-            <span>NodaDB v1.0 released — Built with Rust</span>
+            <span>NodaDB v0.3.10 released — Built with Rust</span>
             <ArrowRight className="w-3.5 h-3.5 text-zinc-400 group-hover:text-white group-hover:translate-x-0.5 transition-all" />
           </motion.a>
 
