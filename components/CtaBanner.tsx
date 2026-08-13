@@ -28,7 +28,7 @@ export function CtaBanner({ onOpenDownloadModal }: CtaBannerProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
         
         {/* Banner Box */}
-        <div className="relative rounded-[32px] bg-gradient-to-r from-[#022117] via-[#054832] to-[#012217] border border-[#17CF97]/25 overflow-hidden shadow-[0_0_80px_rgba(23,207,151,0.15)] min-h-[420px] flex items-center justify-center">
+        <div className="jos relative rounded-[32px] bg-gradient-to-r from-[#022117] via-[#054832] to-[#012217] border border-[#17CF97]/25 overflow-hidden shadow-[0_0_80px_rgba(23,207,151,0.15)] min-h-[420px] flex items-center justify-center" data-jos_animation="zoom-in">
           
           {/* Background Ambient Glow */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(23,207,151,0.2),transparent_70%)] pointer-events-none" />
