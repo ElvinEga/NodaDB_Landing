@@ -1,6 +1,7 @@
 'use client';
 
 import { ExternalLink, ChevronRight, ArrowUp, GitBranch, Search, Terminal, Folder, Globe, Lightbulb, Box, Play, RefreshCw, Database, Bell, Clock } from 'lucide-react';
+import Link from 'next/link';
 import { PostgresqlIcon, MysqlIcon, SqliteIcon } from './icons/DbIcons';
 
 interface WorkspaceGridProps {
@@ -30,13 +31,13 @@ export function WorkspaceGrid({ onOpenDownloadModal }: WorkspaceGridProps) {
 
           {/* Action Buttons */}
           <div className="flex items-center gap-3 shrink-0">
-            <a
+            <Link
               href="#commands"
               className="px-4 py-2.5 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 text-zinc-200 text-xs font-medium inline-flex items-center gap-1.5 transition-all shadow-sm"
             >
               <span>Docs</span>
               <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
-            </a>
+            </Link>
 
             <button
               type="button"
