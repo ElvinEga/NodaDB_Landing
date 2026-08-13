@@ -10,7 +10,7 @@ export function FeaturesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-32">
 
         {/* ==================== BLOCK 1: Relationship Flow ==================== */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="jos grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center" data-jos_animation="fade-up">
           {/* Left Column Text */}
           <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center gap-2 text-xs font-mono tracking-wider text-[#17CF97] uppercase font-semibold">
@@ -58,7 +58,7 @@ export function FeaturesSection() {
 
 
         {/* ==================== BLOCK 2: SQL Workspace & Data Explorer ==================== */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="jos grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center" data-jos_animation="fade-up" data-jos_delay="0.1">
           {/* Left Column Graphic / Card */}
           <div className="lg:col-span-7 order-2 lg:order-1">
             <div className="relative rounded-3xl p-2 bg-gradient-to-br from-[#063324] via-[#031D14] to-[#0A1A14] border border-[#17CF97]/20 shadow-[0_0_50px_rgba(23,207,151,0.12)]">
@@ -122,7 +122,7 @@ export function FeaturesSection() {
 
 
         {/* ==================== BLOCK 3: Visual Schema & Security ==================== */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="jos grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center" data-jos_animation="fade-up" data-jos_delay="0.2">
           {/* Left Column Text */}
           <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center gap-2 text-xs font-mono tracking-wider text-[#17CF97] uppercase font-semibold">
