@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Copy, Check, ArrowRight } from 'lucide-react';
 import { IdePreview } from './IdePreview';
+import Image from 'next/image';
 
 interface HeroProps {
   onOpenDownloadModal: () => void;
@@ -172,7 +173,15 @@ export function Hero({ onOpenDownloadModal }: HeroProps) {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-12 md:mt-16"
         >
-          <IdePreview />
+           <div className="w-full rounded-2xl overflow-hidden">
+          <Image
+            src="/images/noda-preview.png"
+            alt="IDE Preview"
+            className="w-full h-full object-cover "
+            width={1200}
+            height={800} />
+           </div>
+          {/*<IdePreview />*/}
         </motion.div>
       </div>
     </section>

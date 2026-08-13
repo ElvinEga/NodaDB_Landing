@@ -21,8 +21,10 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleTriggerDownload = (osName: string) => {
+  const handleTriggerDownload = (assetType: string) => {
     setDownloaded(true);
+    // Link directly to official GitHub Releases page
+    window.open('https://github.com/ElvinEga/NodaDB/releases', '_blank');
     setTimeout(() => {
       setDownloaded(false);
     }, 4000);
@@ -51,14 +53,14 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
           </div>
           <h3 className="text-2xl font-serif text-white">Get NodaDB Desktop &amp; CLI</h3>
           <p className="text-xs text-zinc-400 font-sans max-w-xs mx-auto">
-            Select your operating system or install via Homebrew / Cargo.
+            Official binaries from GitHub Releases or package managers.
           </p>
         </div>
 
         {downloaded ? (
           <div className="p-4 rounded-xl bg-[#17CF97]/15 border border-[#17CF97]/30 text-[#17CF97] text-center font-mono text-xs font-bold space-y-1">
-            <div>Download initiated! Check your downloads folder. ✓</div>
-            <div className="text-[10px] text-zinc-400 font-normal">NodaDB-v1.0.0-installer</div>
+            <div>Redirecting to GitHub Releases... ✓</div>
+            <div className="text-[10px] text-zinc-400 font-normal">github.com/ElvinEga/NodaDB/releases</div>
           </div>
         ) : (
           <div className="space-y-3">
@@ -72,7 +74,7 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
                 <AppleIcon className="w-5 h-5 text-zinc-300 group-hover:text-[#17CF97] transition-colors" />
                 <div className="text-left font-sans">
                   <div className="font-semibold text-white">macOS (Apple Silicon M1/M2/M3/M4)</div>
-                  <div className="text-[10px] text-zinc-400">NodaDB-1.0.0-arm64.dmg · 28 MB (Rust Native)</div>
+                  <div className="text-[10px] text-zinc-400">NodaDB-1.0.0-arm64.dmg · GitHub Release</div>
                 </div>
               </div>
               <Download className="w-4 h-4 text-zinc-400 group-hover:text-[#17CF97]" />
@@ -86,7 +88,7 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
                 <AppleIcon className="w-5 h-5 text-zinc-400 group-hover:text-[#17CF97] transition-colors" />
                 <div className="text-left font-sans">
                   <div className="font-semibold text-white">macOS (Intel x64)</div>
-                  <div className="text-[10px] text-zinc-400">NodaDB-1.0.0-x64.dmg · 32 MB</div>
+                  <div className="text-[10px] text-zinc-400">NodaDB-1.0.0-x64.dmg · GitHub Release</div>
                 </div>
               </div>
               <Download className="w-4 h-4 text-zinc-400 group-hover:text-[#17CF97]" />
@@ -100,7 +102,7 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
                 <WindowsIcon className="w-5 h-5 text-zinc-400 group-hover:text-[#17CF97] transition-colors" />
                 <div className="text-left font-sans">
                   <div className="font-semibold text-white">Windows 10/11 (x64 Setup)</div>
-                  <div className="text-[10px] text-zinc-400">NodaDB-Setup-1.0.0.exe · 34 MB</div>
+                  <div className="text-[10px] text-zinc-400">NodaDB-Setup-1.0.0.exe · GitHub Release</div>
                 </div>
               </div>
               <Download className="w-4 h-4 text-zinc-400 group-hover:text-[#17CF97]" />
@@ -114,7 +116,7 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
                 <LinuxIcon className="w-5 h-5 text-zinc-400 group-hover:text-[#17CF97] transition-colors" />
                 <div className="text-left font-sans">
                   <div className="font-semibold text-white">Linux (AppImage / .deb)</div>
-                  <div className="text-[10px] text-zinc-400">NodaDB-1.0.0.AppImage · 30 MB</div>
+                  <div className="text-[10px] text-zinc-400">NodaDB-1.0.0.AppImage · GitHub Release</div>
                 </div>
               </div>
               <Download className="w-4 h-4 text-zinc-400 group-hover:text-[#17CF97]" />
@@ -136,10 +138,20 @@ export function DownloadModal({ isOpen, onClose }: DownloadModalProps) {
                 </button>
               </div>
             </div>
+
+            <div className="text-center pt-2">
+              <a
+                href="/download"
+                onClick={onClose}
+                className="text-xs text-[#17CF97] hover:underline font-mono inline-flex items-center gap-1"
+              >
+                <span>View full technical download &amp; build options →</span>
+              </a>
+            </div>
           </div>
         )}
 
-        <div className="text-center pt-2">
+        <div className="text-center pt-1">
           <button onClick={onClose} className="text-xs text-zinc-500 hover:text-white underline">
             Cancel
           </button>

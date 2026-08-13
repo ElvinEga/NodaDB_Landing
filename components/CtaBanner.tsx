@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Apple, Monitor, Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
+import { AppleIcon, WindowsIcon, LinuxIcon } from './icons/OsIcons';
 
 interface CtaBannerProps {
   onOpenDownloadModal?: () => void;
@@ -126,10 +127,11 @@ export function CtaBanner({ onOpenDownloadModal }: CtaBannerProps) {
                 onClick={onOpenDownloadModal}
                 className="inline-flex items-center justify-center gap-2.5 px-7 py-3 rounded-full bg-white hover:bg-zinc-100 text-zinc-950 font-semibold text-sm transition-all transform hover:scale-105 shadow-2xl cursor-pointer"
               >
-                <span>Download</span>
-                <div className="flex items-center gap-1 text-zinc-950">
-                  <Apple className="w-4 h-4 fill-current" />
-                  <Monitor className="w-4 h-4 fill-current" />
+                <span>Download NodaDB</span>
+                <div className="flex items-center gap-1.5 text-zinc-950">
+                  <AppleIcon className="w-4 h-4 fill-current" />
+                  <WindowsIcon className="w-4 h-4 fill-current" />
+                  <LinuxIcon className="w-4 h-4 fill-current" />
                 </div>
               </button>
             </div>

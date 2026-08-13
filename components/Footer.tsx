@@ -125,7 +125,7 @@ export function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">Downloads</a>
+                  <a href="/download" className="hover:text-white transition-colors">Downloads</a>
                 </li>
                 <li>
                   <a href="#integrations" className="hover:text-white transition-colors">Integrations</a>
