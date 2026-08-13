@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { motion } from 'motion/react';
 import { Smartphone, CheckCircle, GitPullRequest, ArrowUpRight, Bell, Shield, Terminal, Play, Sparkles } from 'lucide-react';
 
@@ -52,13 +53,13 @@ export function MobileSection() {
             </div>
 
             <div className="pt-4 flex flex-wrap items-center gap-4">
-              <a
+              <Link
                 href="#pricing"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-medium text-xs border border-white/10 transition-colors"
               >
                 <span>Download on App Store</span>
                 <ArrowUpRight className="w-4 h-4 text-[#17CF97]" />
-              </a>
+              </Link>
               <span className="text-xs font-mono text-zinc-500">Requires iOS 17.0 or later</span>
             </div>
           </div>
