@@ -74,6 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: 'NodaDB',
     operatingSystem: 'macOS, Windows, Linux',
     applicationCategory: 'DeveloperApplication',
+    softwareVersion: '0.3.10',
     description:
       'Universal local-first database management workspace built in Rust. Powered by Kulacore.',
     url: 'https://nodadb.com',
